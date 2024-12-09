@@ -14,4 +14,5 @@ Arbeitsteilung:
 - Burger Menü
 - Ticktes kaufen
 
-Darauf geeinigt EJS zu nutzten um die Daten dynamisch anzuzeigen
+Darauf geeinigt EJS zu nutzten um die Daten dynamisch anzuzeigen  
+Meo macht Backend für EJS
