@@ -1,0 +1,22 @@
+{
+  "name": "zooprojekt",
+  "version": "1.0.0",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilshollenstein/ZooProjekt.git"
+  },
+  "author": "L. Belloni, N. Holenstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nilshollenstein/ZooProjekt/issues"
+  },
+  "homepage": "https://github.com/nilshollenstein/ZooProjekt#readme",
+  "description": ""
+}
