@@ -6,8 +6,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "install": "npm i --only=prod",
-    "install-dev": "npm i && npm link nodemon",
+    "install-prod": "npm i --omit=dev",
+    "install-dev": "npm install && npm link nodemon",
     "dev": "nodemon app.js",
     "start": "node app.js"
   },
