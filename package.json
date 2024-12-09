@@ -6,7 +6,10 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "nodemon app.js"
+    "install": "npm i --only=prod",
+    "install-dev": "npm i && npm link nodemon",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
