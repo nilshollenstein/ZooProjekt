@@ -18,18 +18,20 @@ app.get("/map", (req, res)=>{
     res.render("map.ejs");
 })
 app.get("/groups", (req, res)=>{
-    res.render("map.ejs");
+    res.render("groups.ejs");
 })
 app.get("/wiki", (req, res)=>{
-    res.render("map.ejs");
+    res.render("wiki.ejs");
 })
 app.get("/wiki/:animal", (req, res)=>{
     let animal = req.params.animal;
-    
-    res.render("map.ejs");
+
+    console.log(animal)
+
+    res.render("wiki-entry.ejs");
 })
 app.get("/buy", (req, res)=>{
-    res.render("map.ejs");
+    res.render("buy.ejs");
 })
 
 
