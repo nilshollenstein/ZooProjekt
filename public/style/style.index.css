@@ -20,14 +20,20 @@ h1 {
     overflow: hidden;
     margin: 30px auto;
 }
+
 .carousel img {
-    width: 100%; /* Bilder viel größer */
+    width: 100%;
     display: none;
     border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
+
 .carousel img.active {
     display: block;
+    opacity: 1;
 }
+
 .arrow {
     position: absolute;
     top: 50%;
@@ -41,8 +47,14 @@ h1 {
     border-radius: 50%;
     cursor: pointer;
 }
-.arrow.left { left: 10px; }
-.arrow.right { right: 10px; }
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
 
 /* News Sektion */
 .news {
