@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZooH!</title>
+  <script src="../lib/ejs.min.js"></script>
+</head>
+<body>
+  <!-- Template -->
+  <script id="template" type="text/template">
+    <ul>
+      <% items.forEach(function(item) { %>
+        <li><%= item %></li>
+      <% }); %>
+    </ul>
+  </script>
+
+  <!-- Container für die Ausgabe -->
+  <div id="output"></div>
+
+  <!-- JavaScript -->
+  <script>
+    const data = { items: ["Apfel", "Banane", "Kirsche"] };
+    const template = document.getElementById("template").innerHTML;
+    const html = ejs.render(template, data);
+    document.getElementById("output").innerHTML = html;
+  </script>
+</body>
+</html>
