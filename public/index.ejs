@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="../lib/ejs.min.js"></script>
+    <title>Zoo Zürich</title>
+    <!-- Verlinkung der externen CSS-Datei -->
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- Begrüßungsnachricht -->
+    <h1 class="header">Willkommen im Zoo Zürich</h1>
+    
+    <!-- Bild-Karussell -->
+    <div class="carousel">
+        <button class="arrow left" onclick="changeImage(-1)">&lt;</button>
+        <!-- Bilder: Mehrere Bilder -->
+        <img src="/images/giraffe.jpg" alt="Giraffe" class="active">
+        <img src="/images/elephant.jpg" alt="Elefant">
+        <img src="/images/lion.jpg" alt="Löwe">
+        <button class="arrow right" onclick="changeImage(1)">&gt;</button>
+    </div>
+    
+    <!-- News Abschnitt -->
+    <div class="news">News</div>
+
+    <!-- Verlinkung der externen JavaScript-Datei -->
+    <script src="/carousel.js"></script>
 </body>
 </html>
