@@ -24,4 +24,12 @@ body {
     max-height: 100px;
     cursor: pointer;
 }
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
 
