@@ -1,4 +1,14 @@
 # Wiki
+## Routen
+
+- Startseite /
+- Ticketpreise /tickets
+- Crowdmap /map
+- Gruppentickets /groups
+- Tierwiki /wiki
+- Einzelne Tierwiki Seite /wiki/{animal}
+- Ticktes kaufen /buy
+
 ## Team Kommunikation
 ### 9.12.2024
 Todos zu Board hinzugefügt
