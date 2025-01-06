@@ -32,4 +32,6 @@ Nils koordiniert Projektbeginn
 ### 9.12.2024
 Leon startet mit Index
 Meo erstellt grundlegendes Backend
-Nils Erstellt einheitlichen Header und Footer
+Nils Erstellt einheitlichen Header und Footer - Mal auf die Seite gelegt  
+Nils beginnt Ticketseite
+Meo kümmert sich um Security-Probleme
