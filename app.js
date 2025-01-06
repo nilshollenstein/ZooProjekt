@@ -36,6 +36,9 @@ app.get("/buy", (req, res)=>{
     res.render("buy.ejs");
 })
 
+app.all("*", (req, res)=>{
+    res.status(404).render("404.ejs");
+})
 
 
 app.listen(PORT, ()=>{
