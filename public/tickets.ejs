@@ -1,14 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/style.main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticketpreise</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.main.css" />
+    <link rel="stylesheet" href="./style/style.tickets.css" />
+  </head>
+  <body>
     <%- include('partials/header') %>
+    <h1 class="page-title">Ticketpreise</h1>
+    <h2>Tagestickets</h2>
+    <div class="seasons">
+      <!-- Hauptsaison -->
+      <div class="main-season">
+        <h3>Hauptsaison (März - Oktober)</h3>
+        <table class="price-options">
+          <thead>
+            <tr>
+              <th>Kategorie</th>
+              <th>Preis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kinder (0-6 Jahre)</td>
+              <td>Gratis</td>
+            </tr>
+            <tr>
+              <td>Kinder (7-12 Jahre)</td>
+              <td>15.- CHF</td>
+            </tr>
+            <tr>
+              <td>Jugendliche (13-17 Jahre)</td>
+              <td>24.- CHF</td>
+            </tr>
+            <tr>
+              <td>Erwachsene</td>
+              <td>29.- CHF</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="main-season-students">
+        <h3>Hauptsaison: Studierende und Personen ab 64 Jahren</h3>
+        <table class="price-options">
+          <thead>
+            <tr>
+              <th>Kategorie</th>
+              <th>Preis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Studierende (21-29 Jahre)</td>
+              <td>24.- CHF</td>
+            </tr>
+            <tr>
+              <td>Personen ab 64 Jahren</td>
+              <td>24.- CHF</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Nebensaison -->
+      <div class="off-season">
+        <h3>Nebensaison (November - Februar)</h3>
+        <table class="price-options">
+          <thead>
+            <tr>
+              <th>Kategorie</th>
+              <th>Preis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kinder (0-6 Jahre)</td>
+              <td>Gratis</td>
+            </tr>
+            <tr>
+              <td>Kinder (7-12 Jahre)</td>
+              <td>14.- CHF</td>
+            </tr>
+            <tr>
+              <td>Jugendliche (13-17 Jahre)</td>
+              <td>22.- CHF</td>
+            </tr>
+            <tr>
+              <td>Erwachsene</td>
+              <td>27.- CHF</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="off-season-students">
+        <h3>Nebensaison: Studierende und Personen ab 64 Jahren</h3>
+        <table class="price-options">
+          <thead>
+            <tr>
+              <th>Kategorie</th>
+              <th>Preis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Studierende (21-29 Jahre)</td>
+              <td>23.- CHF</td>
+            </tr>
+            <tr>
+              <td>Personen ab 64 Jahren</td>
+              <td>23.- CHF</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <a href="./buy" id="ticket-link">Tickets kaufen</a>
     <%- include('partials/footer') %>
-</body>
+  </body>
 </html>
