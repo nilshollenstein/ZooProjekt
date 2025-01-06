@@ -4,14 +4,28 @@ body {
     padding: 0;
     text-align: center;
 }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+main {
+    padding-top: 150px; 
+}
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
+    margin-bottom: 15px;
 }
 
 .header-logo {
@@ -24,7 +38,6 @@ body {
     max-height: 100px;
     cursor: pointer;
 }
-/* Footer */
 footer {
     background-color: #222;
     color: white;

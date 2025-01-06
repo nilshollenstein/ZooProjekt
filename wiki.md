@@ -34,3 +34,4 @@ Leon startet mit Index
 Meo erstellt grundlegendes Backend
 Nils Erstellt einheitlichen Header und Footer - Mal auf die Seite gelegt  
 Nils beginnt Ticketseite
+Meo kümmert sich um Security-Probleme
