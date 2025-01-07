@@ -42,10 +42,10 @@ Meo kümmert sich um Security-Probleme
 
 ### 06.01.2025
 
-Nils Ticketseite weiter
-Meo 404 Seite
-Meo Gruppenticktes Seite
+Nils Ticketseite weiter  
+Meo 404 Seite  
+Meo Gruppenticktes Seite  
 Leon versuchte Index zu verbessern
-Leon wenig Informationen über getätigtes
-Nils Ticket-Seite fertig
-Tickets kaufen Seite begonnen
+Leon wenig Informationen über getätigtes  
+Nils Ticket-Seite fertig  
+Tickets kaufen Seite begonnen   
