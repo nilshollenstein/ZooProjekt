@@ -34,11 +34,11 @@ Nils koordiniert Projektbeginn
 
 ### 9.12.2024
 
-Leon startet mit Index
-Meo erstellt grundlegendes Backend
-Nils Erstellt einheitlichen Header und Footer - Mal auf die Seite gelegt  
-Nils beginnt Ticketseite
-Meo kümmert sich um Security-Probleme
+Leon startet mit Index  
+Meo erstellt grundlegendes Backend  
+Nils Erstellt einheitlichen Header und Footer - Mal auf die Seite gelegt    
+Nils beginnt Ticketseite  
+Meo kümmert sich um Security-Probleme  
 
 ### 06.01.2025
 
