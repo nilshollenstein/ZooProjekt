@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoo Zürich</title>
-    <!-- Verlinkung der externen CSS-Dateien -->
     <link rel="stylesheet" href="./style/style.index.css">
     <link rel="stylesheet" href="./style/style.main.css">
 </head>
 <body>
     <%- include('partials/header') %>
 
-    <!-- Begrüßungsnachricht -->
     <h1>Willkommen im Zoo Zürich</h1>
 
-    <!-- Bild-Karussell -->
     <div class="carousel">
         <button class="arrow left" onclick="changeImage(-1)">&lt;</button>
         <img src="./images/giraffe.webp" alt="Giraffe" class="active">
@@ -23,7 +20,6 @@
         <button class="arrow right" onclick="changeImage(1)">&gt;</button>
     </div>
 
-    <!-- News Abschnitt -->
     <div class="news">
         <h2>Aktuelle News aus dem Zoo</h2>
         
@@ -48,7 +44,6 @@
         </div>
     </div>
 
-    <!-- Verlinkung der externen JavaScript-Datei -->
     <script src="/carousel.js"></script>
 
     <%- include('partials/footer') %>
