@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier-Wiki</title>
+    <link rel="stylesheet" href="./style/style.main.css" />
+    <link rel="stylesheet" href="style/style.wiki.css">
+    <script>
+        function searchAnimal() {
+            const searchInput = document.getElementById('search').value.toLowerCase(); 
+            const buttons = document.querySelectorAll('.animal-button');
+
+            buttons.forEach(button => {
+                const animal = button.textContent.toLowerCase();
+                if (animal.includes(searchInput)) {
+                    button.parentElement.style.display = 'block'; 
+                } else {
+                    button.parentElement.style.display = 'none'; 
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="header">Tier-Wiki</div>
+    <div class="search">
+        <input 
+            type="text" 
+            id="search" 
+            placeholder="Suche nach einem Tier..." 
+            onkeyup="searchAnimal()" 
+        />
+    </div>
+    <div class="button-container">
+        <form action="/giraffe">
+            <button class="animal-button">Giraffe</button>
+        </form>
+        <form action="/loewe">
+            <button class="animal-button">Löwe</button>
+        </form>
+        <form action="/leopard">
+            <button class="animal-button">Leopard</button>
+        </form>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>
