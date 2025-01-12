@@ -55,3 +55,7 @@ Tickets kaufen Seite begonnen
 Leon hat wiki.ejs begonnen
 
 ### 12.01.2025
+
+Nils wiki.ejs fertig
+Meo Burger Menü fertig
+Nils buy.ejs fertig
