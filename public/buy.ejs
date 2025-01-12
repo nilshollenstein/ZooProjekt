@@ -3,18 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ticketpreise</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style/style.main.css" />
-    <link rel="stylesheet" href="./style/style.tickets.css" />
+    <title>Tickets kaufen</title>
+    <link rel="stylesheet" href="/style/style.main.css" />
+    <link rel="stylesheet" href="/style/style.buy.css" />
   </head>
   <body>
     <%- include('partials/header') %>
-    <h1 class="page-title">Tickets kaufen</h1>
+    <main>
+      <h1>Tickets kaufen</h1>
+      <section>
+        <h2>Wählen Sie Ihre Tickets</h2>
+        <p id="seasonInfo"></p>
+        <table id="ticketTable">
+          <thead>
+            <tr>
+              <th>Kategorie</th>
+              <th>Preis (pro Ticket)</th>
+              <th>Anzahl</th>
+              <th>Gesamt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kinder (0-6 Jahre)</td>
+              <td id="price-child1">Gratis</td>
+              <td>
+                <button class="decrement" data-category="child1">-</button>
+                <span id="count-child1">0</span>
+                <button class="increment" data-category="child1">+</button>
+              </td>
+              <td id="total-child1">0 CHF</td>
+            </tr>
+            <tr>
+              <td>Kinder (7-12 Jahre)</td>
+              <td id="price-child2">0 CHF</td>
+              <td>
+                <button class="decrement" data-category="child2">-</button>
+                <span id="count-child2">0</span>
+                <button class="increment" data-category="child2">+</button>
+              </td>
+              <td id="total-child2">0 CHF</td>
+            </tr>
+            <tr>
+              <td>Jugendliche (13-17 Jahre)</td>
+              <td id="price-teen">0 CHF</td>
+              <td>
+                <button class="decrement" data-category="teen">-</button>
+                <span id="count-teen">0</span>
+                <button class="increment" data-category="teen">+</button>
+              </td>
+              <td id="total-teen">0 CHF</td>
+            </tr>
+            <tr>
+              <td>Erwachsene</td>
+              <td id="price-adult">0 CHF</td>
+              <td>
+                <button class="decrement" data-category="adult">-</button>
+                <span id="count-adult">0</span>
+                <button class="increment" data-category="adult">+</button>
+              </td>
+              <td id="total-adult">0 CHF</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Gesamttickets:</strong> <span id="totalTickets">0</span></p>
+        <p><strong>Gesamtpreis:</strong> <span id="grandTotal">0 CHF</span></p>
+      </section>
+      <section>
+        <h2>Zahlungsmethode</h2>
+        <form id="paymentForm">
+          <label>
+            <input type="radio" name="paymentMethod" value="twint" required />
+            Twint
+          </label>
+          <label>
+            <input type="radio" name="paymentMethod" value="card" required />
+            Debit/Kreditkarte
+          </label>
+          <label>
+            <input type="radio" name="paymentMethod" value="invoice" required />
+            Rechnung
+          </label>
 
+          <div id="cardDetailsForm" class="hidden">
+            <h3>Kartendetails</h3>
+
+            <label for="cardHolderName">Name des Karteninhabers</label>
+            <input
+              type="text"
+              id="cardHolderName"
+              placeholder="Max Mustermann"
+              required
+            />
+
+            <label for="cardNumber">Kartennummer</label>
+            <input
+              type="text"
+              id="cardNumber"
+              maxlength="16"
+              placeholder="1234 5678 9012 3456"
+              required
+            />
+
+            <label for="expiryDate">Ablaufdatum (MM/YY)</label>
+            <input
+              type="text"
+              id="expiryDate"
+              pattern="\\d{2}/\\d{2}"
+              placeholder="MM/YY"
+              required
+            />
+
+            <label for="cvv">CVV</label>
+            <input
+              type="text"
+              id="cvv"
+              maxlength="3"
+              pattern="\\d{3}"
+              placeholder="123"
+              required
+            />
+          </div>
+
+          <div id="invoiceDetailsForm" class="hidden">
+            <h3>Rechnungsdetails</h3>
+            <label for="invoiceName">Name</label>
+            <input
+              type="text"
+              id="invoiceName"
+              placeholder="Max Mustermann"
+              required
+            />
+
+            <label for="invoiceAddress">Adresse</label>
+            <textarea
+              id="invoiceAddress"
+              placeholder="Straße und Hausnummer, Stadt, Postleitzahl"
+              required
+            ></textarea>
+
+            <label for="invoiceEmail">E-Mail</label>
+            <input
+              type="email"
+              id="invoiceEmail"
+              placeholder="beispiel@domain.de"
+              required
+            />
+          </div>
+          <button type="submit">Checkout</button>
+        </form>
+      </section>
+    </main>
+    <script src="/js/buy.js"></script>
     <%- include('partials/footer') %>
   </body>
 </html>
