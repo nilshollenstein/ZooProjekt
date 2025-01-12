@@ -1,0 +1,35 @@
+{
+  "lion": {
+    "name": "Löwe",
+    "description": "Der Löwe ist bekannt als der König der Tiere.",
+    "image": "/../images/löwe.webp",
+    "habitat": "Savannen und Grasländer",
+    "diet": "Fleisch (Raubtier)",
+    "size": "1,2 - 1,5 Meter (Schulterhöhe)",
+    "weight": "150 - 250 kg",
+    "lifespan": "10 - 14 Jahre",
+    "status": "Gefährdet"
+  },
+  "elephant": {
+    "name": "Elefant",
+    "description": "Der Elefant ist das größte lebende Landtier.",
+    "image": "../images/elefanten.avif",
+    "habitat": "Wälder, Savannen und Grasländer",
+    "diet": "Gräser, Früchte, Rinde",
+    "size": "2,5 - 4 Meter (Schulterhöhe)",
+    "weight": "2.000 - 6.000 kg",
+    "lifespan": "60 - 70 Jahre",
+    "status": "Gefährdet"
+  },
+  "giraffe": {
+    "name": "Giraffe",
+    "description": "Die Giraffe ist das höchste Tier der Welt.",
+    "image": "../images/giraffe.webp",
+    "habitat": "Offene Wälder und Savannen",
+    "diet": "Blätter von Akazien",
+    "size": "4,5 - 6 Meter",
+    "weight": "800 - 1.200 kg",
+    "lifespan": "20 - 25 Jahre",
+    "status": "Nicht gefährdet"
+  }
+}

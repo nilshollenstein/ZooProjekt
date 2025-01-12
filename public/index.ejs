@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoo Zürich</title>
-    <link rel="stylesheet" href="./style/style.index.css">
-    <link rel="stylesheet" href="./style/style.main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style/style.index.css" />
+    <link rel="stylesheet" href="./style/style.main.css" />
+  </head>
+  <body>
     <%- include('partials/header') %>
 
     <h1>Willkommen im Zoo Zürich</h1>
 
     <div class="carousel">
-        <button class="arrow left" onclick="changeImage(-1)">&lt;</button>
-        <img src="./images/giraffe.webp" alt="Giraffe" class="active">
-        <img src="./images/elefanten.avif" alt="Elefant">
-        <img src="./images/löwe.webp" alt="Löwe">
-        <button class="arrow right" onclick="changeImage(1)">&gt;</button>
+      <button class="arrow left" onclick="changeImage(-1)">&lt;</button>
+      <img src="./images/giraffe.webp" alt="Giraffe" class="active" />
+      <img src="./images/elefanten.avif" alt="Elefant" />
+      <img src="./images/löwe.webp" alt="Löwe" />
+      <button class="arrow right" onclick="changeImage(1)">&gt;</button>
     </div>
 
     <div class="news">
-        <h2>Aktuelle News aus dem Zoo</h2>
-        
-        <div class="news-item">
-            <h3>🐼 Panda-Nachwuchs im Zoo Zürich!</h3>
-            <p>Unser Pandapaar hat Zuwachs bekommen! Der kleine Panda ist gesund und munter und kann jetzt im Gehege beobachtet werden.</p>
-        </div>
+      <h2>Aktuelle News aus dem Zoo</h2>
 
-        <div class="news-item">
-            <h3>🦁 Neues Löwengehege eröffnet</h3>
-            <p>Das neue, großzügige Löwengehege ist nun für Besucher geöffnet. Kommt vorbei und beobachtet unsere majestätischen Löwen in ihrem neuen Zuhause!</p>
-        </div>
+      <div class="news-item">
+        <h3>🐼 Panda-Nachwuchs im Zoo Zürich!</h3>
+        <p>
+          Unser Pandapaar hat Zuwachs bekommen! Der kleine Panda ist gesund und
+          munter und kann jetzt im Gehege beobachtet werden.
+        </p>
+      </div>
 
-        <div class="news-item">
-            <h3>🐘 Elefantenpflege: Unser Elefantenbad</h3>
-            <p>Erlebt unsere Elefanten beim täglichen Bad im Elefantenpark! Täglich um 14:00 Uhr können die Tiere beim Planschen beobachtet werden.</p>
-        </div>
+      <div class="news-item">
+        <h3>🦁 Neues Löwengehege eröffnet</h3>
+        <p>
+          Das neue, großzügige Löwengehege ist nun für Besucher geöffnet. Kommt
+          vorbei und beobachtet unsere majestätischen Löwen in ihrem neuen
+          Zuhause!
+        </p>
+      </div>
 
-        <div class="news-item">
-            <h3>🦒 Giraffenfütterung für Besucher</h3>
-            <p>Unsere Giraffen freuen sich immer über Besuch! Jeden Samstag und Sonntag um 11:00 Uhr können Besucher an der Giraffenfütterung teilnehmen.</p>
-        </div>
+      <div class="news-item">
+        <h3>🐘 Elefantenpflege: Unser Elefantenbad</h3>
+        <p>
+          Erlebt unsere Elefanten beim täglichen Bad im Elefantenpark! Täglich
+          um 14:00 Uhr können die Tiere beim Planschen beobachtet werden.
+        </p>
+      </div>
+
+      <div class="news-item">
+        <h3>🦒 Giraffenfütterung für Besucher</h3>
+        <p>
+          Unsere Giraffen freuen sich immer über Besuch! Jeden Samstag und
+          Sonntag um 11:00 Uhr können Besucher an der Giraffenfütterung
+          teilnehmen.
+        </p>
+      </div>
     </div>
 
-    <script src="/carousel.js"></script>
+    <script src="js/carousel.js"></script>
 
     <%- include('partials/footer') %>
-</body>
+  </body>
 </html>
