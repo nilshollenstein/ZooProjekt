@@ -59,3 +59,4 @@ Leon hat wiki.ejs begonnen
 Nils wiki.ejs fertig
 Meo Burger Menü fertig
 Nils buy.ejs fertig
+Nils crowdmap finished

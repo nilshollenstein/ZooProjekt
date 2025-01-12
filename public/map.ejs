@@ -1,0 +1,29 @@
+<html lang="de">
+  <head>
+    <link rel="stylesheet" href="style/style.main.css" />
+    <title>Map</title>
+    <style>
+      .map-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+      }
+      .map-container img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+
+    <h1>Crowdmap</h1>
+    <div class="map-container">
+      <img src="images/zooplan.png" alt="Map" />
+    </div>
+
+    <%- include('partials/header') %>
+  </body>
+</html>

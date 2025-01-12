@@ -34,9 +34,6 @@ app.get("/wiki/:animal", (req, res) => {
 app.get("/buy", (req, res) => {
   res.render("buy.ejs");
 });
-app.get("/redirect-twint", (req, res) => {
-  res.redirect("https://www.twint.ch");
-});
 
 app.all("*", (req, res) => {
   res.status(404).render("404.ejs");
